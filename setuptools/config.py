@@ -226,7 +226,7 @@ class ConfigHandler:
             if sep != separator:
                 raise DistutilsOptionError(
                     'Unable to parse option value to dict: %s' % value)
-            result[key.strip()] = val.strip()
+            result[key.strip()] = str(val.strip())
 
         return result
 
